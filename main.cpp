@@ -281,7 +281,7 @@ int main(int argc, char** argv) {
       break;
     }
     case Lock_type::rw: {
-      C_rw_lock l;
+      Rw_lock l;
       read_only_test(num_threads, arr_size, delay, l);
       break;
     }
